@@ -1,103 +1,151 @@
-# dayappinbear.github.io
-This is a silly website i made for no reason :3
-[about.html](https://github.com/user-attachments/files/33623634/about.html)
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me | DaYappinBear</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaYappinBear's Silly Website</title>
 
-<style>
-* {
-    box-sizing: border-box;[art.html](https://github.com/user-attachments/files/33623640/art.html)
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-}
+        html, body {
+            margin: 0;
+            min-height: 100%;
+            width: 100%;
+        }
 
-body {
-    margin: 0;
-    padding: 25px;
-    background-color: #ED8F91;
-    color: #24151B;
-    font-family: "Ink Free", sans-serif;
-}
+        body {
+            background-color: #ED8F91;
+            color: #24151B;
+            font-family: "Ink Free", sans-serif;
+        }
 
-.page {
-    max-width: 750px;
-    margin: 0 auto;
-}
+        .homepage {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background-image: url("bg.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
 
-.back {
-    display: inline-block;
-    margin-bottom: 15px;
-    padding: 8px 12px;
-    font-size: 20px;
-    color: #24151B;
-    border: 2px solid #fff4e8;
-    border-radius: 10px;
-    text-decoration: none;
-    background-color: rgba(255, 244, 232, 0.35);
-}
+        .hotspot {
+            position: absolute;
+            display: block;
+            background: transparent;
+            text-decoration: none;
+        }
 
-.back:hover {
-    background-color: #fff4e8;
-}
+        .medium {
+            top: 6%;
+            left: 34.5%;
+            width: 12%;
+            height: 8%;
+        }
 
-.about-card {
-    margin-top: 20px;
-    padding: 25px;
-    border: 3px solid #fff4e8;
-    border-radius: 18px 12px 20px 14px;
-    background-color: rgba(255, 244, 232, 0.35);
-}
+        .minefun {
+            top: 6%;
+            left: 49%;
+            width: 12%;
+            height: 8%;
+        }
 
-h1 {
-    font-size: 42px;
-    font-weight: normal;
-}
+        .art {
+            top: 22%;
+            left: 2%;
+            width: 13%;
+            height: 19%;
+        }
 
-h2 {
-    font-size: 29px;
-    font-weight: normal;
-}
+        .books {
+            top: 24%;
+            left: 20%;
+            width: 15%;
+            height: 19%;
+        }
 
-p {
-    font-size: 22px;
-    line-height: 1.7;
-}
+        .spoilers {
+            top: 53%;
+            left: 2%;
+            width: 14%;
+            height: 25%;
+        }
 
-@media (max-width: 500px) {
-    body {
-        padding: 16px;
-    }
+        .about {
+            top: 54%;
+            left: 19%;
+            width: 10%;
+            height: 24%;
+        }
 
-    h1 {
-        font-size: 35px;
-    }
+        .right-art-one {
+            top: 22%;
+            left: 72%;
+            width: 12%;
+            height: 19%;
+        }
 
-    p {
-        font-size: 19px;
-    }
-}
-</style>
+        .right-art-two {
+            top: 45%;
+            left: 72%;
+            width: 12%;
+            height: 19%;
+        }
+
+        .right-art-three {
+            top: 68%;
+            left: 72%;
+            width: 12%;
+            height: 19%;
+        }
+    </style>
 </head>
 
 <body>
-<main class="page">
+    <main class="homepage">
+        <a class="hotspot medium"
+           href="https://medium.com/@gauribgurjar"
+           aria-label="Visit Medium"></a>
 
-<a class="back" href="index.html">&#8592; Back to homepage</a>
+        <a class="hotspot minefun"
+           href="https://minefun.io/"
+           aria-label="Visit Minefun"></a>
 
-<section class="about-card">
-    <h1>About Me</h1>
-    <p>DaYappinBear is a human living on the Earth. She/her pronouns please.</p>
-    <p>She likes touching grass, drawing and other stuff.</p>
-    <p>I really like Math and Science and I am lazy as heck so I wont do much around. Anyway no one be visiting this website so I don't need to make anything-</p>
-</section>
+        <a class="hotspot art"
+           href="art.html"
+           aria-label="My Art"></a>
 
-</main>
+        <a class="hotspot books"
+           href="books.html"
+           aria-label="My Books"></a>
+
+        <a class="hotspot spoilers"
+           href="spoilers.html"
+           aria-label="Spoilers"></a>
+
+        <a class="hotspot about"
+           href="about.html"
+           aria-label="About Me"></a>
+
+        <a class="hotspot right-art-one"
+           href="art.html"
+           aria-label="My Art"></a>
+
+        <a class="hotspot right-art-two"
+           href="art.html"
+           aria-label="My Art"></a>
+
+        <a class="hotspot right-art-three"
+           href="art.html"
+           aria-label="My Art"></a>
+    </main>
 </body>
 </html>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -231,8 +279,7 @@ p {
     </main>
 </body>
 </html>
-[books.html](https://github.com/user-attachments/files/33623647/books.html)
-<img width="2079" height="1225" alt="bg" src="https://github.com/user-attachments/assets/8aef614b-1452-4c37-ac48-cc17151d98f0" />
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -379,158 +426,8 @@ p {
         </section>
 
     </main>
-</body>[index.html](https://github.com/user-attachments/files/33623652/index.html)
-<img width="2500" height="2500" alt="Cuboboard" src="https://github.com/user-attachments/assets/e26857c6-dc63-42d5-ac93-935979526fab" />
-<img width="1152" height="648" alt="Cover page" src="https://github.com/user-attachments/assets/61ae99f3-2194-42dd-8eb5-6ed49a38d4de" />
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DaYappinBear's Silly Website</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html, body {
-            margin: 0;
-            min-height: 100%;
-            width: 100%;
-        }
-
-        body {
-            background-color: #ED8F91;
-            color: #24151B;
-            font-family: "Ink Free", sans-serif;
-        }
-
-        .homepage {
-            position: relative;
-            width: 100%;
-            min-height: 100vh;
-            background-image: url("bg.png");
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-position: top left;
-        }
-
-        .hotspot {
-            position: absolute;
-            display: block;
-            background: transparent;
-            text-decoration: none;
-        }
-
-        .medium {
-            top: 6%;
-            left: 34.5%;
-            width: 12%;
-            height: 8%;
-        }
-
-        .minefun {
-            top: 6%;
-            left: 49%;
-            width: 12%;
-            height: 8%;
-        }
-
-        .art {
-            top: 22%;
-            left: 2%;
-            width: 13%;
-            height: 19%;
-        }
-
-        .books {
-            top: 24%;
-            left: 20%;
-            width: 15%;
-            height: 19%;
-        }
-
-        .spoilers {
-            top: 53%;
-            left: 2%;
-            width: 14%;
-            height: 25%;
-        }
-
-        .about {
-            top: 54%;
-            left: 19%;
-            width: 10%;
-            height: 24%;
-        }
-
-        .right-art-one {
-            top: 22%;
-            left: 72%;
-            width: 12%;
-            height: 19%;
-        }
-
-        .right-art-two {
-            top: 45%;
-            left: 72%;
-            width: 12%;
-            height: 19%;
-        }
-
-        .right-art-three {
-            top: 68%;
-            left: 72%;
-            width: 12%;
-            height: 19%;
-        }
-    </style>
-</head>
-
-<body>
-    <main class="homepage">
-        <a class="hotspot medium"
-           href="https://medium.com/@gauribgurjar"
-           aria-label="Visit Medium"></a>
-
-        <a class="hotspot minefun"
-           href="https://minefun.io/"
-           aria-label="Visit Minefun"></a>
-
-        <a class="hotspot art"
-           href="art.html"
-           aria-label="My Art"></a>
-
-        <a class="hotspot books"
-           href="books.html"
-           aria-label="My Books"></a>
-
-        <a class="hotspot spoilers"
-           href="spoilers.html"
-           aria-label="Spoilers"></a>
-
-        <a class="hotspot about"
-           href="about.html"
-           aria-label="About Me"></a>
-
-        <a class="hotspot right-art-one"
-           href="art.html"
-           aria-label="My Art"></a>
-
-        <a class="hotspot right-art-two"
-           href="art.html"
-           aria-label="My Art"></a>
-
-        <a class="hotspot right-art-three"
-           href="art.html"
-           aria-label="My Art"></a>
-    </main>
 </body>
-</html>[spoilers.html](https://github.com/user-attachments/files/33623654/spoilers.html)
-
+</html>
 
 
 <!DOCTYPE html>
@@ -1022,6 +919,103 @@ HOW TERRITORIAL CAN HUMANS BECOME?</pre>
 </section>
 
 <a class="back" href="index.html">&#8592; Back to homepage</a>
+
+</main>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | DaYappinBear</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    background-color: #ED8F91;
+    color: #24151B;
+    font-family: "Ink Free", sans-serif;
+}
+
+.page {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    font-size: 20px;
+    color: #24151B;
+    border: 2px solid #fff4e8;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgba(255, 244, 232, 0.35);
+}
+
+.back:hover {
+    background-color: #fff4e8;
+}
+
+.about-card {
+    margin-top: 20px;
+    padding: 25px;
+    border: 3px solid #fff4e8;
+    border-radius: 18px 12px 20px 14px;
+    background-color: rgba(255, 244, 232, 0.35);
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 29px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 19px;
+    }
+}
+</style>
+</head>
+
+<body>
+<main class="page">
+
+<a class="back" href="index.html">&#8592; Back to homepage</a>
+
+<section class="about-card">
+    <h1>About Me</h1>
+    <p>DaYappinBear is a human living on the Earth. She/her pronouns please.</p>
+    <p>She likes touching grass, drawing and other stuff.</p>
+    <p>I really like Math and Science and I am lazy as heck so I wont do much around. Anyway no one be visiting this website so I don't need to make anything-</p>
+</section>
 
 </main>
 </body>
