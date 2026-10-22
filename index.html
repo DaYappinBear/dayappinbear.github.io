@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DaYappinBear's Silly Website</title>
+    <meta name="description" content="Welcome to DaYappinBear's silly website! Explore my art, books, spoilers, and more.">
 
     <style>
         * {
@@ -32,29 +34,25 @@
             background-position: top left;
         }
 
-        /* UNDER-CONSTRUCTION MESSAGE */
-        .construction {
-            position: absolute;
-            top: 14%;
-            left: 25%;
-            width: 50%;
-            margin: 0;
-            padding: 8px 12px;
-            color: #24151B;
-            font-family: "Ink Free", sans-serif;
-            font-size: clamp(14px, 2vw, 24px);
-            text-align: center;
-            line-height: 1.4;
-            background: rgba(255, 255, 255, 0.75);
-            border-radius: 12px;
-            pointer-events: none;
-        }
-
         .hotspot {
             position: absolute;
             display: block;
             background: transparent;
             text-decoration: none;
+        }
+
+        /* Keeps link names available to screen readers
+           without displaying them over the background image. */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
         }
 
         .medium {
@@ -123,47 +121,61 @@
 </head>
 
 <body>
-    <main class="homepage">
-
-        <p class="construction">
-            this website is under construction so pls wait :-)
-        </p>
+    <main class="homepage" aria-label="DaYappinBear's homepage">
 
         <a class="hotspot medium"
            href="https://medium.com/@gauribgurjar"
-           aria-label="Visit Medium"></a>
+           aria-label="Visit my Medium page">
+            <span class="visually-hidden">My Medium page</span>
+        </a>
 
         <a class="hotspot minefun"
            href="https://minefun.io/"
-           aria-label="Visit Minefun"></a>
+           aria-label="Visit Minefun">
+            <span class="visually-hidden">Minefun</span>
+        </a>
 
         <a class="hotspot art"
            href="art.html"
-           aria-label="My Art"></a>
+           aria-label="View my art gallery">
+            <span class="visually-hidden">My Art Gallery</span>
+        </a>
 
         <a class="hotspot books"
            href="books.html"
-           aria-label="My Books"></a>
+           aria-label="Explore my books">
+            <span class="visually-hidden">My Books</span>
+        </a>
 
         <a class="hotspot spoilers"
            href="spoilers.html"
-           aria-label="Spoilers"></a>
+           aria-label="Visit the spoilers page">
+            <span class="visually-hidden">Story Spoilers</span>
+        </a>
 
         <a class="hotspot about"
            href="about.html"
-           aria-label="About Me"></a>
+           aria-label="Learn about me">
+            <span class="visually-hidden">About Me</span>
+        </a>
 
         <a class="hotspot right-art-one"
            href="art.html"
-           aria-label="My Art"></a>
+           aria-label="View my art gallery">
+            <span class="visually-hidden">My Art Gallery</span>
+        </a>
 
         <a class="hotspot right-art-two"
            href="art.html"
-           aria-label="My Art"></a>
+           aria-label="View my art gallery">
+            <span class="visually-hidden">My Art Gallery</span>
+        </a>
 
         <a class="hotspot right-art-three"
            href="art.html"
-           aria-label="My Art"></a>
+           aria-label="View my art gallery">
+            <span class="visually-hidden">My Art Gallery</span>
+        </a>
 
     </main>
 </body>
