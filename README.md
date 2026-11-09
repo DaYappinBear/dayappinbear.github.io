@@ -4,7 +4,7 @@ This is a random website.
 
 Here, I have some random artworks, books, etc.
 
-**Website status:** Under construction, plz wait.
+**Website status:** Completed! You can visit my website now.
 
 ## What's innit? 
 
