@@ -122,6 +122,10 @@
             margin: 0 0 5px;
             font-size: 16px;
         }
+
+        #visitor-number {
+            font-size: 16px;
+        }
     </style>
 </head>
 
@@ -196,19 +200,10 @@
     </main>
 
 
-    <!-- GoatCounter tracking script -->
-
-    <script
-        data-goatcounter="https://DaYappinBear.goatcounter.com/count"
-        async
-        src="https://gc.zgo.at/count.js">
-    </script>
-
-
-    <!-- Display the total visitor count -->
+    <!-- Wait for GoatCounter to load, then display the total -->
 
     <script>
-        const counterTimer = setInterval(function () {
+        var counterTimer = setInterval(function () {
 
             if (
                 window.goatcounter &&
@@ -223,6 +218,28 @@
             }
 
         }, 100);
+
+        // Show an error if GoatCounter never loads.
+        setTimeout(function () {
+            if (
+                document.getElementById("visitor-number").textContent
+                    .trim() === "Loading..."
+            ) {
+                clearInterval(counterTimer);
+
+                document.getElementById("visitor-number").textContent =
+                    "Counter unavailable";
+            }
+        }, 15000);
+    </script>
+
+
+    <!-- GoatCounter tracking script -->
+
+    <script
+        data-goatcounter="https://DaYappinBear.goatcounter.com/count"
+        async
+        src="https://gc.zgo.at/count.js">
     </script>
 
 </body>
