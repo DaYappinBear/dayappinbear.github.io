@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>DaYappinBear's Silly Website</title>
-    <meta name="description" content="Welcome to DaYappinBear's silly website! Explore my art, books, spoilers, and more.">
 
     <style>
         * {
@@ -39,20 +39,6 @@
             display: block;
             background: transparent;
             text-decoration: none;
-        }
-
-        /* Keeps link names available to screen readers
-           without displaying them over the background image. */
-        .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
         }
 
         .medium {
@@ -117,66 +103,127 @@
             width: 12%;
             height: 19%;
         }
+
+        .visitor-counter {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 8px 14px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            text-align: center;
+            font-family: "Ink Free", sans-serif;
+            color: #24151B;
+            z-index: 10;
+        }
+
+        .visitor-counter p {
+            margin: 0 0 5px;
+            font-size: 16px;
+        }
     </style>
 </head>
 
 <body>
-    <main class="homepage" aria-label="DaYappinBear's homepage">
+
+    <main class="homepage">
+
+        <!-- Invisible clickable hotspots -->
 
         <a class="hotspot medium"
            href="https://medium.com/@gauribgurjar"
-           aria-label="Visit my Medium page">
-            <span class="visually-hidden">My Medium page</span>
+           aria-label="Visit Medium">
+            <span hidden>Visit Medium</span>
         </a>
 
         <a class="hotspot minefun"
            href="https://minefun.io/"
            aria-label="Visit Minefun">
-            <span class="visually-hidden">Minefun</span>
+            <span hidden>Visit Minefun</span>
         </a>
 
         <a class="hotspot art"
            href="art.html"
-           aria-label="View my art gallery">
-            <span class="visually-hidden">My Art Gallery</span>
+           aria-label="My Art">
+            <span hidden>My Art</span>
         </a>
 
         <a class="hotspot books"
            href="books.html"
-           aria-label="Explore my books">
-            <span class="visually-hidden">My Books</span>
+           aria-label="My Books">
+            <span hidden>My Books</span>
         </a>
 
         <a class="hotspot spoilers"
            href="spoilers.html"
-           aria-label="Visit the spoilers page">
-            <span class="visually-hidden">Story Spoilers</span>
+           aria-label="Spoilers">
+            <span hidden>Spoilers</span>
         </a>
 
         <a class="hotspot about"
            href="about.html"
-           aria-label="Learn about me">
-            <span class="visually-hidden">About Me</span>
+           aria-label="About Me">
+            <span hidden>About Me</span>
         </a>
 
         <a class="hotspot right-art-one"
            href="art.html"
-           aria-label="View my art gallery">
-            <span class="visually-hidden">My Art Gallery</span>
+           aria-label="My Art">
+            <span hidden>My Art</span>
         </a>
 
         <a class="hotspot right-art-two"
            href="art.html"
-           aria-label="View my art gallery">
-            <span class="visually-hidden">My Art Gallery</span>
+           aria-label="My Art">
+            <span hidden>My Art</span>
         </a>
 
         <a class="hotspot right-art-three"
            href="art.html"
-           aria-label="View my art gallery">
-            <span class="visually-hidden">My Art Gallery</span>
+           aria-label="My Art">
+            <span hidden>My Art</span>
         </a>
 
+
+        <!-- Visitor counter -->
+
+        <div class="visitor-counter">
+            <p>Visitors to this website:</p>
+            <div id="visitor-number">Loading...</div>
+        </div>
+
     </main>
+
+
+    <!-- GoatCounter tracking script -->
+
+    <script
+        data-goatcounter="https://YOURACCOUNTNAME.goatcounter.com/count"
+        async
+        src="https://gc.zgo.at/count.js">
+    </script>
+
+
+    <!-- Display the total visitor count -->
+
+    <script>
+        const counterTimer = setInterval(function () {
+
+            if (
+                window.goatcounter &&
+                window.goatcounter.visit_count
+            ) {
+                clearInterval(counterTimer);
+
+                window.goatcounter.visit_count({
+                    append: "#visitor-number",
+                    path: "TOTAL"
+                });
+            }
+
+        }, 100);
+    </script>
+
 </body>
 </html>
