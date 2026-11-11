@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,17 +7,8 @@
     <title>DaYappinBear's Silly Website</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html, body {
-            margin: 0;
-            min-height: 100%;
-            width: 100%;
-        }
-
         body {
+            margin: 0;
             background-color: #ED8F91;
             color: #24151B;
             font-family: "Ink Free", sans-serif;
@@ -29,32 +21,11 @@
             background-image: url("bg.png");
             background-size: 100% 100%;
             background-repeat: no-repeat;
-            background-position: top left;
-        }
-
-        /* UNDER-CONSTRUCTION MESSAGE */
-        .construction {
-            position: absolute;
-            top: 14%;
-            left: 25%;
-            width: 50%;
-            margin: 0;
-            padding: 8px 12px;
-            color: #24151B;
-            font-family: "Ink Free", sans-serif;
-            font-size: clamp(14px, 2vw, 24px);
-            text-align: center;
-            line-height: 1.4;
-            background: rgba(255, 255, 255, 0.75);
-            border-radius: 12px;
-            pointer-events: none;
         }
 
         .hotspot {
             position: absolute;
             display: block;
-            background: transparent;
-            text-decoration: none;
         }
 
         .medium {
@@ -123,27 +94,24 @@
 </head>
 
 <body>
-    <main class="homepage">
 
-        <p class="construction">
-            this website is under construction so pls wait :-)
-        </p>
+    <div class="homepage">
 
         <a class="hotspot medium"
            href="https://medium.com/@gauribgurjar"
-           aria-label="Visit Medium"></a>
+           aria-label="Medium"></a>
 
         <a class="hotspot minefun"
            href="https://minefun.io/"
-           aria-label="Visit Minefun"></a>
+           aria-label="Minefun"></a>
 
         <a class="hotspot art"
            href="art.html"
-           aria-label="My Art"></a>
+           aria-label="Art"></a>
 
         <a class="hotspot books"
            href="books.html"
-           aria-label="My Books"></a>
+           aria-label="Books"></a>
 
         <a class="hotspot spoilers"
            href="spoilers.html"
@@ -151,20 +119,21 @@
 
         <a class="hotspot about"
            href="about.html"
-           aria-label="About Me"></a>
+           aria-label="About"></a>
 
         <a class="hotspot right-art-one"
            href="art.html"
-           aria-label="My Art"></a>
+           aria-label="Art"></a>
 
         <a class="hotspot right-art-two"
            href="art.html"
-           aria-label="My Art"></a>
+           aria-label="Art"></a>
 
         <a class="hotspot right-art-three"
            href="art.html"
-           aria-label="My Art"></a>
+           aria-label="Art"></a>
 
-    </main>
+    </div>
+
 </body>
 </html>
