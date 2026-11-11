@@ -7,6 +7,10 @@
     <title>DaYappinBear's Silly Website</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             background-color: #ED8F91;
@@ -17,15 +21,22 @@
         .homepage {
             position: relative;
             width: 100%;
-            min-height: 100vh;
-            background-image: url("bg.png");
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
+            max-width: 2079px;
+            margin: 0 auto;
+            aspect-ratio: 2079 / 1225;
+        }
+
+        .background-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         .hotspot {
             position: absolute;
             display: block;
+            z-index: 1;
         }
 
         .medium {
@@ -96,6 +107,12 @@
 <body>
 
     <div class="homepage">
+
+        <img
+            src="bg.png"
+            alt="Homepage background"
+            class="background-image"
+        >
 
         <a class="hotspot medium"
            href="https://medium.com/@gauribgurjar"
