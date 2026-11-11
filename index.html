@@ -27,11 +27,14 @@
         .homepage {
             position: relative;
             width: 100%;
-            min-height: 100vh;
-            background-image: url("bg.png");
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-position: top left;
+            max-width: 2079px;
+            margin: 0 auto;
+        }
+
+        .background-image {
+            display: block;
+            width: 100%;
+            height: auto;
         }
 
         .hotspot {
@@ -39,6 +42,7 @@
             display: block;
             background: transparent;
             text-decoration: none;
+            z-index: 1;
         }
 
         .medium {
@@ -103,35 +107,18 @@
             width: 12%;
             height: 19%;
         }
-
-        .visitor-counter {
-            position: absolute;
-            bottom: 12px;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 8px 14px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            text-align: center;
-            font-family: "Ink Free", sans-serif;
-            color: #24151B;
-            z-index: 10;
-        }
-
-        .visitor-counter p {
-            margin: 0 0 5px;
-            font-size: 16px;
-        }
-
-        #visitor-number {
-            font-size: 16px;
-        }
     </style>
 </head>
 
 <body>
 
     <main class="homepage">
+
+        <img
+            src="bg.png"
+            alt="Homepage background"
+            class="background-image"
+        >
 
         <!-- Invisible clickable hotspots -->
 
@@ -189,58 +176,7 @@
             <span hidden>My Art</span>
         </a>
 
-
-        <!-- Visitor counter -->
-
-        <div class="visitor-counter">
-            <p>Visitors to this website:</p>
-            <div id="visitor-number">Loading...</div>
-        </div>
-
     </main>
-
-
-    <!-- Wait for GoatCounter to load, then display the total -->
-
-    <script>
-        var counterTimer = setInterval(function () {
-
-            if (
-                window.goatcounter &&
-                window.goatcounter.visit_count
-            ) {
-                clearInterval(counterTimer);
-
-                window.goatcounter.visit_count({
-                    append: "#visitor-number",
-                    path: "TOTAL"
-                });
-            }
-
-        }, 100);
-
-        // Show an error if GoatCounter never loads.
-        setTimeout(function () {
-            if (
-                document.getElementById("visitor-number").textContent
-                    .trim() === "Loading..."
-            ) {
-                clearInterval(counterTimer);
-
-                document.getElementById("visitor-number").textContent =
-                    "Counter unavailable";
-            }
-        }, 15000);
-    </script>
-
-
-    <!-- GoatCounter tracking script -->
-
-    <script
-        data-goatcounter="https://dayappinbear.goatcounter.com/count"
-        async
-        src="https://gc.zgo.at/count.js">
-    </script>
 
 </body>
 </html>
